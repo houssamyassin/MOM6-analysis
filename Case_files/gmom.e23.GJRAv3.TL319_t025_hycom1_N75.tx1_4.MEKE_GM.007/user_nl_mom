@@ -1,0 +1,112 @@
+!---------------------------------------------------------------------
+! Users should add all user specific MOM_input parameter changes after
+! these comments as follows:
+!   parameter_name = new_parameter_value
+!
+! If the parameter belongs to a module, enter the parameter in MOM6
+! runtime parameter format ,e.g., change N_SMOOTH parameter within the
+! KPP module as follows:
+!   KPP%
+!   N_SMOOTH = 3
+!   %KPP
+!
+! Note: The parameter changes added to this file will automatically be
+!       applied to:
+!   $RUNDIR/MOM_override
+!
+! WARNING: If a MOM_override file is placed in SourceMods/src.mom/,
+! any additional parameter changes in this file will trigger an error.
+!
+! Parameters:
+!---------------------------------------------------------------------
+
+INPUTDIR = "INPUT"
+Z_INIT_REMAP_GENERAL = True
+CHANNEL_CONFIG = "list"
+CHANNEL_LIST_FILE = "MOM_channels_global_t025"
+USE_CVMix_TIDAL = True
+INT_TIDE_DISSIPATION = True
+TIDAL_ENERGY_FILE = "energy_new_tx1_4_conserve_011023_cdf5.nc"
+TIDAL_ENERGY_TYPE = Jayne
+!!! Willy's suggestions !!!!!
+USE_MEKE = True
+MEKE_BGSRC = 0
+MEKE_ALPHA_RHINES = 1.0
+MEKE_ALPHA_EADY = 0.0
+!!! other changes !!!!
+DIABATIC_FIRST = False
+RESTORE_SALINITY = True
+SALT_RESTORE_FILE = "state_restore_tx1_4_20221227.nc"
+FLUXCONST = 0.166
+ADJUST_NET_FRESH_WATER_TO_ZERO = True
+ADJUST_NET_SRESTORE_TO_ZERO = True
+READ_TIDEAMP = False
+PRESSURE_DEPENDENT_FRAZIL = True
+CHL_VARNAME = "CHL_A"
+CHL_FILE = "seawifs-clim-1997-2010-tx1_4v1.nc"
+DO_GEOTHERMAL = False
+TOPO_EDITS_FILE = ""
+!!!!! Franks's grid !!!!!!!!!!!
+NK = 75
+REGRIDDING_COORDINATE_MODE = "HYCOM1"
+INTERPOLATION_SCHEME = "PPM_CW"
+REMAPPING_SCHEME = "PPM_CW"
+VELOCITY_REMAPPING_SCHEME = "PPM_CW"
+HYCOM1_ONLY_IMPROVES = True
+BOUNDARY_EXTRAPOLATION = True
+ALE_COORDINATE_CONFIG = "HYBRID:hybrid_75layer_zstar2.50m-2020-11-23.nc,sigma2,dz"
+REGRID_COMPRESSIBILITY_FRACTION = 0.0
+MAXIMUM_INT_DEPTH_CONFIG = "FNC1:5,8000.0,1.0,.01"
+MAX_LAYER_THICKNESS_CONFIG = "FILE:dz_max_90th_quantile.nc,dz"
+COORD_CONFIG = "ALE"
+!!! Backscatter !!!
+MEKE_GMCOEFF = -1.0 
+LAPLACIAN = True
+MEKE_VISCOSITY_COEFF_KU = -0.075
+MEKE_COLD_START = True
+EBT_POWER = 2
+MEKE_CD_SCALE = 1.0
+MEKE_CB = 0.0 
+MEKE_CT = 0.0
+MEKE_FRCOEFF = 1.0
+MEKE_KH = 0.0
+MEKE_KHCOEFF = 0.75
+MEKE_KHTH_FAC = 0.0
+MEKE_MIN_LSCALE = True
+MEKE_ALPHA_GRID = 1.0
+MEKE_ADVECTION_FACTOR = 1.0
+MEKE_TOPOGRAPHIC_BETA = 1.0
+RES_SCALE_MEKE_VISC = False
+RES_SCALE_MEKE_VISC_REV = True
+VISC_RES_SCALE_COEF = 2.0
+VISC_RES_FN_POWER = 50
+!!! Vertical Mixing !!!
+KV = 0
+KD = 0
+PRANDTL_BKGND = 1
+!!! GM !!!
+KHTH = 1000
+DEPTH_SCALED_KHTH = True
+KHTH_USE_EBT_STRUCT = True
+KHTH_SLOPE_CFF = 0.01
+USE_STORED_SLOPES = True
+DEPTH_SCALED_KHTH_H0 = 250.0
+DEPTH_SCALED_KHTH_EXP = 3.0
+KHTH_MAX_CFL = 0.8
+KHTH_USE_FGNV_STREAMFUNCTION = True
+FGNV_C_MIN = 0.01
+USE_KH_IN_MEKE = True
+RESOLN_SCALED_KHTH = True
+KH_RES_SCALE_COEF = 2.0 
+KH_RES_FN_POWER = 50
+!!! Redi !!!
+KHTR = 1000
+RESOLN_SCALED_KHTR = True
+KHTR_USE_EBT_STRUCT = True
+MAX_TR_DIFFUSION_CFL = 2.0
+USE_NEUTRAL_DIFFUSION = True
+NDIFF_INTERIOR_ONLY = True
+NDIFF_TAPERING = True
+USE_HORIZONTAL_BOUNDARY_DIFFUSION = True
+HBD_LINEAR_TRANSITION = True
+KHTR_SLOPE_CFF = 0.0

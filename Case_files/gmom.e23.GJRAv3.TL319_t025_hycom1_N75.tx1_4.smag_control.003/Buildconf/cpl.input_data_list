@@ -1,0 +1,7 @@
+mesh_mask = /glade/work/gmarques/cesm/tx1_4/mesh/tx1_4_mesh_221216_cdf5.nc
+mesh_atm = /glade/campaign/cesm/cesmdata/inputdata/share/meshes/TL319_151007_ESMFmesh.nc
+mesh_ice = /glade/work/gmarques/cesm/tx1_4/mesh/tx1_4_mesh_221216_cdf5.nc
+mesh_ocn = /glade/work/gmarques/cesm/tx1_4/mesh/tx1_4_mesh_221216_cdf5.nc
+rof2ocn_liq_rmapname = /glade/work/gmarques/cesm/tx1_4/runoff_mapping/map_jra_to_tx1_4_nnsm_e333r100_221217_cdf5.nc
+rof2ocn_ice_rmapname = /glade/work/gmarques/cesm/tx1_4/runoff_mapping/map_jra_to_tx1_4_nnsm_e333r100_221217_cdf5.nc
+mesh_rof = /glade/campaign/cesm/cesmdata/inputdata/lnd/dlnd7/JRA55/JRA.v1.4.runoff.1958_ESMFmesh_cdf5_20201020.nc

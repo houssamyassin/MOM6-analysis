@@ -1,0 +1,43 @@
+Generating namelists for /glade/work/yhoussam/cases/gmom.e23.GJRAv3.TL319_t025_hycom1_N75.tx1_4.smag_control.003
+  2024-10-19 04:24:43 atm 
+Create namelist for component datm
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/cdeps/datm/cime_config/buildnml
+  2024-10-19 04:24:44 lnd 
+Create namelist for component slnd
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/cime/CIME/non_py/src/components/stub_comps_nuopc/slnd/cime_config/buildnml
+  2024-10-19 04:24:44 ice 
+Create namelist for component cice
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/cice//cime_config/buildnml
+RUN: /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/cice/bld/generate_cice_decomp.pl -ccsmroot /glade/work/yhoussam/code/cesm2_3_beta17_t025 -res tx0.25v1 -nx 1440 -ny 1080 -nproc 256 -thrds 1 -output all 
+FROM: /glade/work/yhoussam/cases/gmom.e23.GJRAv3.TL319_t025_hycom1_N75.tx1_4.smag_control.003
+  output: 1440 1080 30 27 8 sectrobin square-ice
+
+  2024-10-19 04:24:47 ocn 
+Create namelist for component mom
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/mom//cime_config/buildnml
+  2024-10-19 04:24:47 rof 
+Create namelist for component drof
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/cdeps/drof/cime_config/buildnml
+  2024-10-19 04:24:47 glc 
+Create namelist for component sglc
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/cime/CIME/non_py/src/components/stub_comps_nuopc/sglc/cime_config/buildnml
+  2024-10-19 04:24:47 wav 
+Create namelist for component swav
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/cime/CIME/non_py/src/components/stub_comps_nuopc/swav/cime_config/buildnml
+  2024-10-19 04:24:47 esp 
+Create namelist for component sesp
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/cime/CIME/non_py/src/components/stub_comps_nuopc/sesp/cime_config/buildnml
+  2024-10-19 04:24:47 cpl 
+Create namelist for component drv
+   Calling /glade/work/yhoussam/code/cesm2_3_beta17_t025/components/cmeps/cime_config/buildnml
+Writing nuopc_runconfig for components ['CPL', 'ATM', 'ICE', 'OCN', 'ROF']
+-------------------------------------------------------------------------
+ - Prestage required restarts into /glade/derecho/scratch/yhoussam/gmom.e23.GJRAv3.TL319_t025_hycom1_N75.tx1_4.smag_control.003/run
+ - Case input data directory (DIN_LOC_ROOT) is /glade/campaign/cesm/cesmdata/inputdata 
+ - Checking for required input datasets in DIN_LOC_ROOT
+-------------------------------------------------------------------------
+run command is mpibind  --label  --line-buffer  --  /glade/derecho/scratch/yhoussam/gmom.e23.GJRAv3.TL319_t025_hycom1_N75.tx1_4.smag_control.003/bld/cesm.exe   >> cesm.log.$LID 2>&1  
+check for resubmit
+dout_s True 
+mach derecho 
+resubmit_num 4

@@ -1,0 +1,19 @@
+!----------------------------------------------------------------------------------
+! Users should add all user specific namelist changes below in the form of
+!   namelist_var = new_namelist_value
+! Note - that it does not matter what namelist group the namelist_var belongs to
+!----------------------------------------------------------------------------------
+
+dumpfreq = 'x','x','x','x','x'
+f_fresh = 'mxxxx'
+f_fresh_ai = 'mxxxx'
+grid_file = "/glade/work/gmarques/cesm/tx1_4/seaice_files/horiz_grid_20221219.ieeer8"
+grid_format = "bin"
+grid_type = "tripole"
+kcatbound = 0
+kmt_file = "/glade/work/gmarques/cesm/tx1_4/seaice_files/topography_20221219.ieeei4"
+ktherm = 2
+update_ocn_f = .true.
+frzpnd = "cesm"
+prescribed_ice_mode = .false.
+ns_boundary_type = "tripole"

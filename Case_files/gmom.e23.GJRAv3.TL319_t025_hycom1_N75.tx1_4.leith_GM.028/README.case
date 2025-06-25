@@ -1,0 +1,44 @@
+2024-11-07 15:59:37: /glade/work/yhoussam/code/cesm2_3_beta17_t025_res/cime/scripts/create_newcase --case gmom.e23.GJRAv3.TL319_t025_hycom1_N75.tx1_4.leith_GM.028 --res TL319_t025 --compset 2000_DATM%JRA-1p4-2018_SLND_CICE_MOM6_DROF%JRA-1p4-2018_SGLC_SWAV --run-unsupported --project p93300612
+ ---------------------------------------------------
+2024-11-07 15:59:37: Compset longname is 2000_DATM%JRA-1p4-2018_SLND_CICE_MOM6_DROF%JRA-1p4-2018_SGLC_SWAV_SESP
+ ---------------------------------------------------
+2024-11-07 15:59:37: Compset specification file is /glade/work/yhoussam/code/cesm2_3_beta17_t025_res/components/mom//cime_config/config_compsets.xml
+ ---------------------------------------------------
+2024-11-07 15:59:37: Pes     specification file is /glade/work/yhoussam/code/cesm2_3_beta17_t025_res/components/mom//cime_config/config_pes.xml
+ ---------------------------------------------------
+2024-11-07 15:59:37: Forcing is 1972-2004
+ ---------------------------------------------------
+2024-11-07 15:59:37: Using 1 coupler instances
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component ATM is  Data driven ATM interannual JRA55 forcing, v1.4, through 2018
+ ---------------------------------------------------
+2024-11-07 15:59:37: ATM_GRID is TL319
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component LND is Stub land component
+ ---------------------------------------------------
+2024-11-07 15:59:37: LND_GRID is null
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component ICE is Sea ICE (cice) model version 6
+ ---------------------------------------------------
+2024-11-07 15:59:37: ICE_GRID is tx0.25v1
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component OCN is MOM6 OCEAN 
+ ---------------------------------------------------
+2024-11-07 15:59:37: OCN_GRID is tx0.25v1
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component ROF is Data runoff modelJRA55 interannual forcing, v1.4, through 2018
+ ---------------------------------------------------
+2024-11-07 15:59:37: ROF_GRID is JRA025
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component GLC is Stub glacier (land ice) component
+ ---------------------------------------------------
+2024-11-07 15:59:37: GLC_GRID is null
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component WAV is Stub wave component
+ ---------------------------------------------------
+2024-11-07 15:59:37: WAV_GRID is null
+ ---------------------------------------------------
+2024-11-07 15:59:37: Component ESP is Stub external system processing (ESP) component
+ ---------------------------------------------------
+2024-11-07 15:59:37: ESP_GRID is None
+ ---------------------------------------------------
